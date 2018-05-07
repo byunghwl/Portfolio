@@ -1,6 +1,23 @@
 .card{
-	border: 0 px;
-	min-width: 27%; 
-	max-width: 27%;
+	border: 0px !Important;
+	min-width: 30%; 
+	max-width: 30%;
 	margin-bottom: 4rem;
+	background-color:#fcfcfc;	
+}
+
+.img-fluid{
+	transition: opacity .3s ease-out;
+}
+
+.card:hover .img-fluid {
+  opacity: 0.7;
+}
+
+.card-body{
+	background-color:#fcfcfc;
+	font-size: 14px;
+	text-align: center;
+	color: #404040;
+
 }

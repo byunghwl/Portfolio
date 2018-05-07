@@ -1,9 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
-
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:500);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
 
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
+}
+.non-underline,
+.non-underline:hover{
+	text-decoration: none;
+}
+
+.a-no-effect
+.a-no-effect:link,
+.a-no-effect:visited,
+.a-no-effect:hover,
+.a-no-effect:active{
+	all:unset;
+	color: black !Important;
+	cursor: pointer;
+	text-decoration: none;
 }

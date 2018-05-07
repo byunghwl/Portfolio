@@ -23,7 +23,7 @@
         
       ],
       "scripts": [
-       
+        "js_lib/jquery.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

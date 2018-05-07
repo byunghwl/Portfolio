@@ -1,5 +1,6 @@
 .page-header {
   display: flex;
+  border-bottom: 0px;
 }
 
 h1,
@@ -7,11 +8,30 @@ h1,
   flex: 1;
   vertical-align: top;
   margin-top: 0 !important;
+  color: black;
 }
 
-.nav {
+.nav>li>a{
+	margin-top: 20px;
+}
+
+.nav-a{
+
+	color: #999 !important;	
+}
+
+.nav-a:hover{
+	color: #111 !important;
+}
+.nav-a:active{
+	color: #111 !important;
+}
+
+.nav {  
   text-align: right;
 }
+
+
 
 .nav.nav-pills>li {
   float: none;

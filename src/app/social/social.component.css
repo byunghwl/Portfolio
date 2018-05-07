@@ -1,0 +1,9 @@
+.icon-black{
+	color: #222 !Important;
+	padding-right: 12px;
+	font-size:23px
+}
+
+.icon-black:hover{
+	text-decoration: none;
+}

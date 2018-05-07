@@ -1,72 +1,16 @@
 
-<div class="container" id="wgrid">
+<div class="container" id="wgrid" style="margin-top: 3.5%">
 	<div class="card-deck">
-
-	    <div class="card" >
-		  	<a href="#" class="">
-			    	<img class="img-fluid" src="assets\img\vr_rehearsal.png" alt="Card image cap">
-			   
+		 <div class="card"  *ngFor="let card of workThumbnails" >
+		  	<a routerLink="/work/{{card.url}}" class="non-underline">
+			    
+			    <img class="img-fluid" width="100%" src={{card.imgSrc}} alt="Card image cap">	
+			    
 			    <div class="card-body">
-			      <h5 class="card-title">VR REHEARSAL: Practice your Rehearsal</h5>
+			      <h5 class="card-title">{{card.title | uppercase }}</h5>
 			    </div>
 		     </a>
 		</div>
-
-		<div class="card" >
-		  	<a href="#" class="">
-			    	<img class="img-fluid" src="assets\img\bvw.jpg" alt="Card image cap">
-			   
-			    <div class="card-body">
-			      <h5 class="card-title">VR REHEARSAL: Practice your Rehearsal</h5>
-			    </div>
-		     </a>
-		</div>
-
-		 <div class="card" >
-		  	<a href="#" class="">
-			    	<img class="card-img-top" src=".../100px200/" alt="Card image cap">
-			   
-			    <div class="card-body">
-			      <h5 class="card-title">Card title</h5>
-			    </div>
-		     </a>
-		</div>
-
-		 <div class="card" >
-		  	<a href="#" class="">
-			    	<img class="card-img-top" src=".../100px200/" alt="Card image cap">
-			   
-			    <div class="card-body">
-			      <h5 class="card-title">Card title</h5>
-			    </div>
-		     </a>
-		</div>
-
-		 <div class="card" >
-		  	<a href="#" class="">
-			    	<img class="card-img-top" src=".../100px200/" alt="Card image cap">
-			   
-			    <div class="card-body">
-			      <h5 class="card-title">Card title</h5>
-			    </div>
-		     </a>
-		</div>
-
-		 <div class="card" >
-		  	<a href="#" class="">
-			    	<img class="card-img-top" src=".../100px200/" alt="Card image cap">
-			   
-			    <div class="card-body">
-			      <h5 class="card-title">Card title</h5>
-			    </div>
-		     </a>
-		</div>
-
-		
-
-
-	  
-
 
 	</div>
 </div>
