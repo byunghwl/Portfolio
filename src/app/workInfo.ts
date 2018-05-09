@@ -164,8 +164,9 @@ export const WorkInfoList: WorkInfomation[] = [
 	  	title: 'World Builder: VR Interaction Research', url: 'world-builder', 
 	  	texts:[
 	  		"World builder is a capstone project I worked on during my summer internship in Autodesk.\
-	  		It was about researching and building UI prototypes for 3d modeling, drawing and placing objects in the virtual reality environment.\
-			I worked in a team of four (two designers, two engineers) and we performed a thorough research and ideation on how VR can useful to designers.\
+	  		It was about researching and building UI prototypes for 3d modeling, drawing and placing objects in the virtual reality environment."
+	  		,
+	  		"I worked in a team of four (two designers, two engineers) and we performed a thorough research and ideation on how VR can useful to designers.\
 			Through rapid prototyping and iteration, we were able to build several prototypes which show the optimized user interface for moving and interacting with objects in the VR space." 
 	  		], 
 	  	imgGifs:[
@@ -197,8 +198,9 @@ export const WorkInfoList: WorkInfomation[] = [
 	  	texts:[
 	  		"VR Rehearsal is a mobile VR application which was designed for people who suffers from public speech anxiety.\
 			It provides a simulation of a virtual audience  which reacts to the user’s voice and gaze. \
-			Users can upload their own slides on Google Drive or Dropbox.\
-			By tracking your head rotation(gaze) and the sound level of your voice, the app measures your performance and provides feedback.\
+			Users can upload their own slides on Google Drive or Dropbox."
+			,
+			"By tracking your head rotation(gaze) and the sound level of your voice, the app measures your performance and provides feedback.\
 			The feedback is given in two ways. During the presentation, the virtual audience reacts to your performance. \
 			For example, if you are not looking at the audience, they start to look at their phone or fall asleep. \
 			After the presentation, the app shows a heat map of where you were looking at and also a record file of your voice synced to each page of the slide."
@@ -228,8 +230,11 @@ export const WorkInfoList: WorkInfomation[] = [
 	  	title: 'Buiding Virtual Worlds: Game Prototypes', url: 'bvw', 
 	  	texts:[
 	  		"BVW is a course in which the students have to create five games within a semester.\
-	  		 I worked in different teams creating a game every two weeks.\
-			 Through this course, I learned how to communicate with people with different background and was able to practice rapid prototyping and user playtesting."
+	  		 I worked in different teams creating a game every two weeks."
+			 ,
+			 "Through this course,\
+			 I learned how to communicate with people with different background\
+			 and was able to practice rapid prototyping and user playtesting."
 	  		], 
 	  	videoURL: "https://www.youtube.com/embed/CxOcDayI88Y",
 	  	imgGifs:[
@@ -250,11 +255,12 @@ export const WorkInfoList: WorkInfomation[] = [
 	  	awards:[],presented:[],
 	  	title: 'Game Engine: Writing a Game Engine from Scratch', url: 'gameEngine', 
 	  	texts:[
-	  		"B3D was a project in which I built a 3D game engine from scratch.\
+	  		"SHEngine was a project in which I built a 3D game engine from scratch.\
 			It includes a programmable shader pipeline (HLSL), forward-kinematics animation system, a simple collision detection(AABB) algorithm and uses Lua library to support simple logic scripting functionality.\
 			The project is built using C++ and DirectX 9.\
-			In order to build a game engine with better performance, I studied various topics such as data-oriented design and A* pathfinder algorithm.\
-			This project was a capstone project for the KOCCA Academy.\
+			In order to build a game engine with better performance, I studied various topics such as data-oriented design and A* pathfinder algorithm."
+			,
+			"This project was a capstone project for the KOCCA Academy.\
 			The engine developed in a team of two and we created a game using this game engine as a demo by collaboration with two 3D artists."
 	  		], 
 	  	videoURL: "https://www.youtube.com/embed/F4OaWtVeZH4",

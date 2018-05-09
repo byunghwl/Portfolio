@@ -14,7 +14,6 @@ import { SocialComponent } from './social/social.component';
 
 
 import { WorkInfoService } from './work-info.service';
-import { PageService } from './page.service';
 
 
 // 1. followed this NGB tutorial
@@ -41,8 +40,7 @@ import { PageService } from './page.service';
     NgbModule.forRoot()
   ],
   providers: [
-  	WorkInfoService,
-  	PageService
+  	WorkInfoService
   ],
   bootstrap: [AppComponent]
 })
