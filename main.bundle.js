@@ -119,14 +119,12 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__work_work_component__ = __webpack_require__("./src/app/work/work.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__social_social_component__ = __webpack_require__("./src/app/social/social.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__work_info_service__ = __webpack_require__("./src/app/work-info.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__page_service__ = __webpack_require__("./src/app/page.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -165,8 +163,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot()
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_12__work_info_service__["a" /* WorkInfoService */],
-                __WEBPACK_IMPORTED_MODULE_13__page_service__["a" /* PageService */]
+                __WEBPACK_IMPORTED_MODULE_12__work_info_service__["a" /* WorkInfoService */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
         })
@@ -326,36 +323,6 @@ var NavComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/page.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PageService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var PageService = /** @class */ (function () {
-    function PageService() {
-    }
-    PageService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-        __metadata("design:paramtypes", [])
-    ], PageService);
-    return PageService;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/social/social.component.css":
 /***/ (function(module, exports) {
 
@@ -459,7 +426,7 @@ var WorkInfoService = /** @class */ (function () {
 /***/ "./src/app/work/work.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "\r\n\r\n.content-box{\r\n\tmargin-top:50px;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n.iframe-container {\r\n  position: relative;\r\n  width: 100%;\r\n  height: 0;\r\n  padding-bottom: 56.25%;\r\n  margin-bottom: 30px;\r\n}\r\n\r\n.iframe-container iframe {\r\n   position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n@media only screen and (max-width: 750px){\r\n  .text-box{\r\n    width: 100%;\r\n   \r\n    padding-top: 10px;\r\n    margin-bottom: 10px;\r\n    position: relative; \r\n    font-size: 16px;\r\n    font-weight: 400;\r\n    color: #555;\r\n    font-family: Source Code Pro;\r\n    text-align: left;\r\n  }\r\n\r\n  .iframe-container-60 img{\r\n    width: 100%;\r\n    height: 100%;\r\n  }\r\n\r\n  .content-box-center{\r\n     display: -webkit-box;\r\n     display: -ms-flexbox;\r\n     display: flex;\r\n     -webkit-box-pack: start;\r\n         -ms-flex-pack: start;\r\n             justify-content: flex-start;\r\n   }\r\n}\r\n\r\n@media only screen and (min-width: 751px){\r\n   \r\n\r\n\r\n   .content-box-center{\r\n     display: -webkit-box;\r\n     display: -ms-flexbox;\r\n     display: flex;\r\n     -webkit-box-pack: center;\r\n         -ms-flex-pack: center;\r\n             justify-content: center;\r\n   }\r\n\r\n   .text-box{\r\n      width: 60%;\r\n      margin: auto;   \r\n      padding-top: 10px;\r\n      margin-bottom: 10px;\r\n      position: relative; \r\n      font-size: 16px;\r\n      padding-right: 17px;\r\n      padding-left: 17px;\r\n      font-weight: 400;\r\n      color: #555;\r\n      text-align: left;\r\n      font-family: Source Code Pro;\r\n    }\r\n\r\n    .iframe-container-60 img{\r\n      width: 60%;\r\n      height: 100%;\r\n    }\r\n  \r\n}\r\n\r\n.iframe-container-60{\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\r\n  padding-top: 40px;\r\n}\r\n\r\n.title-text{\r\n\tfont-family:  Source Code Pro;\r\n\tcolor: #222;\r\n\tfont-weight: 300;\r\n    font-style: normal;\r\n    line-height: 1.5em;\r\n    font-size: 2em;\r\n    text-transform: uppercase;\r\n    text-decoration: none;\r\n    letter-spacing: .06em;\r\n\r\n    margin-bottom: 100px;\r\n}\r\n\r\n.text-align-center{\r\n\ttext-align: center;\t\r\n}\r\n\r\n.gifImage{\r\n  margin-bottom: 10px;\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\r\n}\r\n\r\n.award-box{\r\n  margin-bottom: 100px;\r\n}\r\n\r\n.prizeIcon{\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center; \r\n  margin-bottom: 10px;\r\n}\r\n\r\n.award-header{\r\n  color:#d1d1d1;\r\n  font-size: 18px;\r\n  letter-spacing: .06em;\r\n  margin-bottom: 25px;\r\n}\r\n\r\n.award-text{\r\n  font-family: Source Code Pro;\r\n  font-size: 18px;\r\n  font-weight: 400;\r\n  margin: auto;\r\n  display: block;\r\n  color: #111;\r\n\r\n  \r\n}\r\n\r\n.text-header-box{\r\n  font-family: Source Code Pro;\r\n  font-weight: 300;\r\n  font-size: 2em;\r\n  letter-spacing: .06em;\r\n\tposition: relative;\r\n\tpadding-top: 17px;\r\n\tpadding-bottom: 17px;\r\n}\r\n\r\n.githubLink\r\n{\r\n  width: 200px;\r\n  height: 50px;\r\n  margin: auto;\r\n  padding-top: 50px;\r\n  padding-bottom: 100px;\r\n   \r\n}\r\n\r\n.githubLink>a{\r\n  padding: 21px 34px;\r\n  font-size: 15px;\r\n  text-transform: uppercase;\r\n  letter-spacing: 1px;\r\n  font-weight: 600;\r\n  font-style: normal;\r\n  color: #fff;\r\n  background-color: #272727;\r\n  border-color: #272727;\r\n}"
+module.exports = "\r\n\r\n.content-box{\r\n\tmargin-top:50px;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n.iframe-container {\r\n  position: relative;\r\n  width: 100%;\r\n  height: 0;\r\n  padding-bottom: 56.25%;\r\n  margin-bottom: 30px;\r\n}\r\n\r\n.iframe-container iframe {\r\n   position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n@media only screen and (max-width: 750px){\r\n  .text-box{\r\n    width: 100%;\r\n   \r\n    padding-top: 10px;\r\n    margin-bottom: 10px;\r\n    position: relative; \r\n    font-size: 16px;\r\n    font-weight: 400;\r\n    line-height: 1.8em;\r\n    color: #555;\r\n    font-family: Source Code Pro;\r\n    text-align: left;\r\n  }\r\n\r\n  .iframe-container-60 img{\r\n    width: 100%;\r\n    height: 100%;\r\n  }\r\n\r\n  .content-box-center{\r\n     display: -webkit-box;\r\n     display: -ms-flexbox;\r\n     display: flex;\r\n     -webkit-box-pack: start;\r\n         -ms-flex-pack: start;\r\n             justify-content: flex-start;\r\n   }\r\n}\r\n\r\n@media only screen and (min-width: 751px){\r\n   \r\n\r\n\r\n   .content-box-center{\r\n     display: -webkit-box;\r\n     display: -ms-flexbox;\r\n     display: flex;\r\n     -webkit-box-pack: center;\r\n         -ms-flex-pack: center;\r\n             justify-content: center;\r\n   }\r\n\r\n   .text-box{\r\n      width: 60%;\r\n      margin: auto;   \r\n      padding-top: 10px;\r\n      margin-bottom: 10px;\r\n      position: relative; \r\n      font-size: 16px;\r\n      padding-right: 17px;\r\n      line-height: 1.8em;\r\n      padding-left: 17px;\r\n      font-weight: 400;\r\n      color: #555;\r\n      text-align: left;\r\n      font-family: Source Code Pro;\r\n    }\r\n\r\n    .iframe-container-60 img{\r\n      width: 60%;\r\n      height: 100%;\r\n    }\r\n  \r\n}\r\n\r\n.iframe-container-60{\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\r\n  padding-top: 40px;\r\n}\r\n\r\n.title-text{\r\n\tfont-family:  Source Code Pro;\r\n\tcolor: #222;\r\n\tfont-weight: 300;\r\n    font-style: normal;\r\n    line-height: 1.5em;\r\n    font-size: 2em;\r\n    text-transform: uppercase;\r\n    text-decoration: none;\r\n    letter-spacing: .06em;\r\n\r\n    margin-bottom: 100px;\r\n}\r\n\r\n.text-align-center{\r\n\ttext-align: center;\t\r\n}\r\n\r\n.gifImage{\r\n  margin-bottom: 10px;\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\r\n}\r\n\r\n.award-box{\r\n  margin-bottom: 100px;\r\n}\r\n\r\n.prizeIcon{\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center; \r\n  margin-bottom: 10px;\r\n}\r\n\r\n.award-header{\r\n  color:#d1d1d1;\r\n  font-size: 18px;\r\n  letter-spacing: .06em;\r\n  margin-bottom: 25px;\r\n}\r\n\r\n.award-text{\r\n  font-family: Source Code Pro;\r\n  font-size: 18px;\r\n  font-weight: 400;\r\n  margin: auto;\r\n  display: block;\r\n  color: #111;\r\n\r\n  \r\n}\r\n\r\n.text-header-box{\r\n  font-family: Source Code Pro;\r\n  font-weight: 300;\r\n  font-size: 2em;\r\n  letter-spacing: .06em;\r\n\tposition: relative;\r\n\tpadding-top: 17px;\r\n\tpadding-bottom: 17px;\r\n}\r\n\r\n.githubLink\r\n{\r\n  width: 200px;\r\n  height: 50px;\r\n  margin: auto;\r\n  padding-top: 50px;\r\n  padding-bottom: 100px;\r\n   \r\n}\r\n\r\n.githubLink>a{\r\n  padding: 21px 34px;\r\n  font-size: 15px;\r\n  text-transform: uppercase;\r\n  letter-spacing: 1px;\r\n  font-weight: 600;\r\n  font-style: normal;\r\n  color: #fff;\r\n  background-color: #272727;\r\n  border-color: #272727;\r\n}"
 
 /***/ }),
 
@@ -724,8 +691,8 @@ var WorkInfoList = [
         title: 'World Builder: VR Interaction Research', url: 'world-builder',
         texts: [
             "World builder is a capstone project I worked on during my summer internship in Autodesk.\
-	  		It was about researching and building UI prototypes for 3d modeling, drawing and placing objects in the virtual reality environment.\
-			I worked in a team of four (two designers, two engineers) and we performed a thorough research and ideation on how VR can useful to designers.\
+	  		It was about researching and building UI prototypes for 3d modeling, drawing and placing objects in the virtual reality environment.",
+            "I worked in a team of four (two designers, two engineers) and we performed a thorough research and ideation on how VR can useful to designers.\
 			Through rapid prototyping and iteration, we were able to build several prototypes which show the optimized user interface for moving and interacting with objects in the VR space."
         ],
         imgGifs: [
@@ -755,8 +722,8 @@ var WorkInfoList = [
         texts: [
             "VR Rehearsal is a mobile VR application which was designed for people who suffers from public speech anxiety.\
 			It provides a simulation of a virtual audience  which reacts to the user’s voice and gaze. \
-			Users can upload their own slides on Google Drive or Dropbox.\
-			By tracking your head rotation(gaze) and the sound level of your voice, the app measures your performance and provides feedback.\
+			Users can upload their own slides on Google Drive or Dropbox.",
+            "By tracking your head rotation(gaze) and the sound level of your voice, the app measures your performance and provides feedback.\
 			The feedback is given in two ways. During the presentation, the virtual audience reacts to your performance. \
 			For example, if you are not looking at the audience, they start to look at their phone or fall asleep. \
 			After the presentation, the app shows a heat map of where you were looking at and also a record file of your voice synced to each page of the slide.",
@@ -785,9 +752,9 @@ var WorkInfoList = [
         title: 'Buiding Virtual Worlds: Game Prototypes', url: 'bvw',
         texts: [
             "BVW is a course in which the students have to create five games within a semester.\
-	  		 I worked in different teams creating a game every two weeks.\
-			 Through this course,\ I learned how to communicate with people\
-			 with different background\
+	  		 I worked in different teams creating a game every two weeks.",
+            "Through this course,\
+			 I learned how to communicate with people with different background\
 			 and was able to practice rapid prototyping and user playtesting."
         ],
         videoURL: "https://www.youtube.com/embed/CxOcDayI88Y",
@@ -809,11 +776,11 @@ var WorkInfoList = [
         awards: [], presented: [],
         title: 'Game Engine: Writing a Game Engine from Scratch', url: 'gameEngine',
         texts: [
-            "B3D was a project in which I built a 3D game engine from scratch.\
+            "SHEngine was a project in which I built a 3D game engine from scratch.\
 			It includes a programmable shader pipeline (HLSL), forward-kinematics animation system, a simple collision detection(AABB) algorithm and uses Lua library to support simple logic scripting functionality.\
 			The project is built using C++ and DirectX 9.\
-			In order to build a game engine with better performance, I studied various topics such as data-oriented design and A* pathfinder algorithm.\
-			This project was a capstone project for the KOCCA Academy.\
+			In order to build a game engine with better performance, I studied various topics such as data-oriented design and A* pathfinder algorithm.",
+            "This project was a capstone project for the KOCCA Academy.\
 			The engine developed in a team of two and we created a game using this game engine as a demo by collaboration with two 3D artists."
         ],
         videoURL: "https://www.youtube.com/embed/F4OaWtVeZH4",
