@@ -1,9 +1,53 @@
-.card{
-	border: 0px !Important;
-	min-width: 30%; 
-	max-width: 30%;
-	margin-bottom: 4rem;
-	background-color:#fcfcfc;	
+
+
+@media only screen and (max-width: 750px){
+	
+		
+
+	.card-deck{
+	  display: grid;
+	  width: 100%;
+	  grid-template-columns: repeat(2, 50%);
+	  grid-template-rows: repeat(2, 50%);
+	  grid-column-gap: 1rem;
+	}
+
+	.card{
+		 border: 0px !Important;
+		 background-color:#fcfcfc;	
+	}
+	
+	.card-body{
+		background-color:#fcfcfc;
+		text-align: center;
+		color: #404040;
+	}
+}
+@media only screen and (min-width: 751px){
+
+	.card-deck{
+	  display: grid;
+	  width: 100%;
+	  grid-template-columns: repeat(3, 33.3%);
+	  grid-template-rows: repeat(3, 33.3%);
+	  grid-column-gap: 1rem;
+	}
+
+	.card{
+		border: 0px !Important;
+		background-color:#fcfcfc;	
+	}
+
+	.card-body{
+		background-color:#fcfcfc;
+		text-align: center;
+		color: #404040;
+	}
+
+	
+}
+.work-grid-wrapper{
+	margin-top: 95px;
 }
 
 .img-fluid{
@@ -19,5 +63,40 @@
 	font-size: 14px;
 	text-align: center;
 	color: #404040;
+}
 
+.card-title{
+	font-family: Source Code Pro;
+	font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .06em;
+    text-align: center;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: none;
+    color: #404040;
+}
+
+.grid-control-box{
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+#nav-button-box > span{
+	cursor: pointer;
+ 	color: #575757;
+}
+
+
+.back-button{
+  color: #575757; 
+  text-decoration: none;
+ 
+  
+  
 }

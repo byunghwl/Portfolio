@@ -1,5 +1,21 @@
 
-<div class="container" id="wgrid" style="margin-top: 3.5%">
+<div class="container work-grid-wrapper" id="wgrid" >
+	
+	<div class="grid-control-box" *ngIf = "activateNavMenu">
+			
+			<div>
+				<a class="back-button" href="#" >
+						BACK TO HOME
+				</a>
+			</div>
+
+			<div id="nav-button-box">
+				<span (click)="OnNavSpanClick(false)"> PREV    </span>
+				  / 
+				<span (click)="OnNavSpanClick(true)">   NEXT </span>
+			</div>
+	</div>
+
 	<div class="card-deck">
 		 <div class="card"  *ngFor="let card of workThumbnails" >
 		  	<a routerLink="/work/{{card.url}}" class="non-underline">
@@ -7,10 +23,10 @@
 			    <img class="img-fluid" width="100%" src={{card.imgSrc}} alt="Card image cap">	
 			    
 			    <div class="card-body">
-			      <h5 class="card-title">{{card.title | uppercase }}</h5>
+			      <div class="card-title">{{card.title | uppercase }}</div>
 			    </div>
 		     </a>
 		</div>
-
 	</div>
+	
 </div>

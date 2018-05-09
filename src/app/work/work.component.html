@@ -5,40 +5,94 @@
 	  	{{workInfo.title | uppercase}} 
 	</h1>
 
-	<div class="auto-resizable-iframe">
-		<div>
-			<iframe [src]="transform(workInfo.videoURL)" width="1045" height="588" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+	<!-- Awards -->
+	<div class="award-box" *ngIf= "workInfo.awards.length > 0">
+		<h2 class="text-align-center award-header">
+		     AWARD
+		</h2>
+
+		<div class="prizeIcon" *ngFor="let award of workInfo.awards">
+			<img [src] = "transform(award.iconUrl)" width="150px" height="150px">
 		</div>
+
+		<a class="text-align-center award-text" 
+		style="white-space: pre-line" 
+		*ngFor="let award of workInfo.awards"
+			[href]="transform(award.linksUrl)">
+			{{ award.caption || uppercase }}
+		</a>
 	</div>
+
+	<!--Presented 
+	<div class="award-box" *ngIf= "workInfo.presented.length > 0">
+		<h2 class="text-align-center award-header">
+		     PRESENTED
+		</h2>
+
+		<img [src] = "transform(workInfo.presented[0].iconUrl)">
+	</div>
+	-->
+
+	<div class="iframe-container" *ngIf= "workInfo.videoURL.length > 0">
+		<!--<div>-->
+			<iframe [src]="transform(workInfo.videoURL)" width="1045" height="588" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen  ></iframe>
+		<!--</div>-->
+	</div>
+
 	<h3 class="text-align-center text-header-box">ABOUT</h3>
 
 	<div class="text-box content-box-center" *ngFor="let text of workInfo.texts">
-		<p>
+		<p style="line-height: 1.8em;">
 			{{text}}
 		</p>
 	</div>
 
-	<h3 *ngIf="workInfo.ingredients.length > 0" class="text-align-center .text-header-box">INGREDIENTS</h3>
+	<!-- Audio Cloud -->
+	<div *ngIf="workInfo.audioClouds.length > 0" class="content-box-center">
+		<ul>
+			<li *ngFor="let audioCloud of workInfo.audioClouds">
 
-	<div class="text-box content-box-center">
+				<h4>
+					{{audioCloud.caption}}
+				</h4>
+				<audio controls controlsList="nodownload" >
+				 	<source 
+				  	[src]="transform(audioCloud.url)" type="audio/mp3">
+				</audio>
+			<li>
+		</ul>
+	</div>
+
+	<h3 *ngIf="workInfo.ingredients.length > 0" class="text-align-center text-header-box">DETAILS</h3>
+
+	<div class="text-box content-box-center ingredient">
 		<ul>
 			<li *ngFor="let ingredient of workInfo.ingredients"> {{ingredient}} </li>
 		</ul>	
 	</div>
 
-	<div class="auto-resizable-iframe-60" style="">
-		<div class="" *ngFor="let imgGif of workInfo.imgGifs">
-			<div>
+	<!-- Github page link -->
+	<div class="githubLink" *ngIf="workInfo.futherLink" >
+		<a [href]="transform(workInfo.futherLink.url)">
+			{{workInfo.futherLink.caption | uppercase }}
+		</a>
+	</div>
+
+	<!-- Show GIF -->
+	<div class="iframe-container-60" style="">
+		<div class="gifImage" *ngFor="let imgGif of workInfo.imgGifs">
+			
 				<!--
 				<iframe [src]="transform(imgGif.url)" width="{{imgGif.width}}" height="{{imgGif.height}}" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 				-->
 				<img [src] = "transform(imgGif.url)">
-			</div>
 		</div>
 	</div>
-	
-	<a href="#">Back to work</a>
+		
 </div>
+
+
 
 <app-workgrid></app-workgrid>
 

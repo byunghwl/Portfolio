@@ -2,11 +2,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 
-import { WorkThumbnail, WorkThumbList, WorkInfomation, WorkInfoList } from './workInfo';
+import { WorlInfoOrder,WorkThumbnail, WorkThumbList, WorkInfomation, WorkInfoList } from './workInfo';
 
 @Injectable()
 export class WorkInfoService {
   
+  maxWorkPageCount: number;
+
+
   getWorkThumbnails():Observable<WorkThumbnail[]>{
   	return of(WorkThumbList);
   }
@@ -19,6 +22,18 @@ export class WorkInfoService {
   	return of(WorkInfoList.find(workI => workI.url == id));
   }
 
-  constructor() {}
+  getFocusedWorkUrlIndex(id:string):Observable<number>
+  {
+  	return of(WorlInfoOrder.findIndex(workInfoUrl => workInfoUrl == id ));
+  }
+
+  getWorkUrlByIndex(idx:number):Observable<string>{
+  	return of(WorlInfoOrder[idx]);
+  }
+
+  constructor() {
+  	this.maxWorkPageCount = WorlInfoOrder.length;
+
+  }
 
 }

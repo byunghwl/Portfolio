@@ -3,6 +3,8 @@
 @import "~font-awesome/css/font-awesome.min.css";
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:500);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 .starter-template {
   padding: 3rem 1.5rem;

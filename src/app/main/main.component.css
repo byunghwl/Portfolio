@@ -1,0 +1,25 @@
+@media only screen and (max-width: 750px){
+	.intro{
+		width: 100%; 
+		margin-top:3%;
+	}
+
+}
+
+@media only screen and (min-width: 751px){
+	.intro{
+		width: 65%; 
+		margin-top:3%;
+	}
+}
+
+.lead{
+	text-align: left; 
+	font-size: 15px;
+	font-family: Source code pro;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.8em;
+	margin-bottom: 5%;
+	color: #575757;
+}

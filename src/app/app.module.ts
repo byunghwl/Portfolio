@@ -10,9 +10,12 @@ import { FooterComponent } from './footer/footer.component';
 import { WorkgridComponent } from './workgrid/workgrid.component';
 import { MainComponent } from './main/main.component';
 import { WorkComponent } from './work/work.component';
+import { SocialComponent } from './social/social.component';
+
 
 import { WorkInfoService } from './work-info.service';
-import { SocialComponent } from './social/social.component';
+import { PageService } from './page.service';
+
 
 // 1. followed this NGB tutorial
 // https://medium.com/codingthesmartway-com-blog/using-bootstrap-with-angular-c83c3cee3f4a
@@ -38,7 +41,8 @@ import { SocialComponent } from './social/social.component';
     NgbModule.forRoot()
   ],
   providers: [
-  	WorkInfoService
+  	WorkInfoService,
+  	PageService
   ],
   bootstrap: [AppComponent]
 })
