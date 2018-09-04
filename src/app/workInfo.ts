@@ -48,6 +48,7 @@ export class WorkInfomation{
 }
 
 export const WorkThumbList: WorkThumbnail[] = [
+ 	  { title: 'Instant Musician: AR Guide For Playing Piano', url: 'music-everywhere', imgSrc: "assets\\img\\me_thumb.gif" },
 	  { title: 'music everywhere: AR Piano Learning experience', url: 'music-everywhere', imgSrc: "assets\\img\\me_thumb.gif" },
 	  { title: 'Campfire: Responsive storytelling agent', url: 'campfire', imgSrc: "assets\\img\\alexa.png" },
 	  { title: 'World Builder: VR Interaction Research', url: 'world-builder', imgSrc: "assets\\img\\autodesk.png" },
