@@ -2,7 +2,6 @@ import { trigger, group, state, animate, transition, style } from '@angular/anim
 
 export function routerTransition() {
   return slideToLeft();
-
 }
 
 function slideToRight() {
@@ -20,7 +19,7 @@ function slideToRight() {
   ]);
 }
 
-function slideToLeft() {
+export function slideToLeft() {
   return trigger('routerTransition', [
     
     state('void', style({position:'relative', width:'100%'}) ),
