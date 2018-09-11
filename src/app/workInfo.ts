@@ -48,7 +48,7 @@ export class WorkInfomation{
 }
 
 export const WorkThumbList: WorkThumbnail[] = [
- 	  { title: 'Instant Musician: AR Guide For Playing Piano', url: 'music-everywhere', imgSrc: "assets\\img\\me_thumb.gif" },
+ 	  { title: 'Instant Musician: AR Guide For Playing Piano', url: 'instant-musician', imgSrc: "assets\\img\\Instant_musician_clip.gif" },
 	  { title: 'music everywhere: AR Piano Learning experience', url: 'music-everywhere', imgSrc: "assets\\img\\me_thumb.gif" },
 	  { title: 'Campfire: Responsive storytelling agent', url: 'campfire', imgSrc: "assets\\img\\alexa.png" },
 	  { title: 'World Builder: VR Interaction Research', url: 'world-builder', imgSrc: "assets\\img\\autodesk.png" },
@@ -60,6 +60,7 @@ export const WorkThumbList: WorkThumbnail[] = [
 ]
 
 export const WorlInfoOrder: string[]=[
+	"instant-musician",
 	"music-everywhere",
 	"campfire",
 	"world-builder",
@@ -70,6 +71,26 @@ export const WorlInfoOrder: string[]=[
 ]
 
 export const WorkInfoList: WorkInfomation[] = [
+	  { 
+	  	awards:[],presented:[],
+	  	title: 'Instant Musician: Play Piano with AR', url: 'instant-musician', 
+	  	texts:[
+	  		"Using Apple's ARKit technology, the Instant Musician app superimposes\
+			 augmented reality indicators directly on your piano or keyboard that show you\
+			 which notes to play, when to play them, and for how long to hold them"
+	  		], 
+	  	videoURL: "https://youtu.be/b9qNS_KLGXg",
+	  	imgGifs:[
+	  				//{width:480, height:270, url:"assets\\img\\campfire-1.gif"}, 
+	  			],
+	  	ingredients:[
+	  		"Platform - iOS",
+	  		"Engine - Unity3D with Apple ARKit",
+	  		"Backend - AWS DynamoDB and S3",
+	  	],
+	  	futherLink:{ url: "https://www.music-everywhere.co/", caption: "Go to AppStore"},
+	  	audioClouds:[]
+	  },
 	  { 
 	  	awards:
 	  	[

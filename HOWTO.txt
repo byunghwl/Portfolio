@@ -10,7 +10,8 @@
 https://developer.telerik.com/featured/quick-angular-2-hosting-angular-cli-github-pages/
 
 1. Compile & bootstrap 
-ng build --prod --base-href /Portfolio/
+ng build --prod --base-href "URL"
+ng build --prod --base-href https://byunghwl.github.io/Portfolio/
 
 2. Uploat to github and publish
 gh-pages -d dist
