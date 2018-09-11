@@ -1,7 +1,9 @@
 
 
-
-
+----------------
+-Test
+----------------
+ng serve
 
 ----------------
 -DEPLOY
@@ -15,6 +17,11 @@ ng build --prod --base-href https://byunghwl.github.io/Portfolio/
 
 2. Uploat to github and publish
 gh-pages -d dist
+
+3. create CNAME on gh-pages branch
+www.byunghwl.com
+byunghwl.com
+
 
 ----------------
 - DNS setting
