@@ -79,7 +79,7 @@ export const WorkInfoList: WorkInfomation[] = [
 			 augmented reality indicators directly on your piano or keyboard that show you\
 			 which notes to play, when to play them, and for how long to hold them"
 	  		], 
-	  	videoURL: "https://youtu.be/b9qNS_KLGXg",
+	  	videoURL: "https://www.youtube.com/embed/b9qNS_KLGXg",
 	  	imgGifs:[
 	  				//{width:480, height:270, url:"assets\\img\\campfire-1.gif"}, 
 	  			],
