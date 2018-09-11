@@ -1,0 +1,22 @@
+
+
+
+
+
+----------------
+-DEPLOY
+----------------
+**Reference**
+https://developer.telerik.com/featured/quick-angular-2-hosting-angular-cli-github-pages/
+
+1. Compile & bootstrap 
+ng build --prod --base-href /Portfolio/
+
+2. Uploat to github and publish
+gh-pages -d dist
+
+----------------
+- DNS setting
+----------------
+Reference
+http://www.curtismlarson.com/blog/2015/04/12/github-pages-google-domains/
