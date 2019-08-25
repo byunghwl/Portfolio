@@ -48,6 +48,7 @@ export class WorkInfomation{
 }
 
 export const WorkThumbList: WorkThumbnail[] = [
+ 	  { title: 'NBA2K Series', url: 'NBA2k', imgSrc: "assets\\img\\nba-2k20-cover.jpg" },
  	  { title: 'Instant Musician: AR Guide For Playing Piano', url: 'instant-musician', imgSrc: "assets\\img\\Instant_musician_clip.gif" },
 	  { title: 'music everywhere: AR Piano Learning experience', url: 'music-everywhere', imgSrc: "assets\\img\\me_thumb.gif" },
 	  { title: 'Campfire: Responsive storytelling agent', url: 'campfire', imgSrc: "assets\\img\\alexa.png" },
@@ -60,6 +61,7 @@ export const WorkThumbList: WorkThumbnail[] = [
 ]
 
 export const WorlInfoOrder: string[]=[
+	"NBA2k",
 	"instant-musician",
 	"music-everywhere",
 	"campfire",
@@ -71,6 +73,23 @@ export const WorlInfoOrder: string[]=[
 ]
 
 export const WorkInfoList: WorkInfomation[] = [
+	{ 
+	  	awards:[],presented:[],
+	  	title: 'NBA2K Series', url: 'NBA2k', 
+	  	texts:[
+	  		"Particpated NBA2K Series as Tool engineer"
+	  		], 
+	  	videoURL: "https://www.youtube.com/embed/EhWIhN-QMVw",
+	  	imgGifs:[
+	  				//{width:480, height:270, url:"assets\\img\\campfire-1.gif"}, 
+	  			],
+	  	ingredients:[
+	  		"Platform - C/C++/C#",
+	  		"Engine   - In-house engine",
+	  	],
+	  	futherLink:{ url: "https://https://www.nba2k.com/", caption: "Go to NBA2K.com"},
+	  	audioClouds:[]
+	  },
 	  { 
 	  	awards:[],presented:[],
 	  	title: 'Instant Musician: Play Piano with AR', url: 'instant-musician', 
