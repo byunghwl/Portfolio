@@ -77,7 +77,7 @@ export const WorkInfoList: WorkInfomation[] = [
 	  	awards:[],presented:[],
 	  	title: 'NBA2K Series', url: 'NBA2k', 
 	  	texts:[
-	  		"Particpated NBA2K Series as Tool engineer"
+	  		"Participating NBA2K Series as Game/Tool engineer since 2019",	  		
 	  		], 
 	  	videoURL: "https://www.youtube.com/embed/EhWIhN-QMVw",
 	  	imgGifs:[
